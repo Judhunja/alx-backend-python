@@ -30,7 +30,7 @@ class TestGithubOrgClient(unittest.TestCase):
         )
         self.assertEqual(result, {})
 
-    def test_public_repos(self):
+    def test_public_repos_url(self):
         """Test that GitHubOrgClient._public_repos_url works properly"""
         with patch(
             "client.GithubOrgClient.org", new_callable=PropertyMock
